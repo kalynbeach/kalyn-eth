@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Kalyn Beach`,
+    title: `KALYN BEACH`,
     description: `What's this... a wave?`,
     author: `@kalynbeach`,
     siteUrl: `https://kalyn.eth/`,
@@ -8,6 +8,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

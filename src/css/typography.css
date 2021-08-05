@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "VT323";
+  src: url("../fonts/VT323-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DMMono";
+  src: url("../fonts/DMMono-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DMMonoItalic";
+  src: url("../fonts/DMMono-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
