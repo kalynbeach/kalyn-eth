@@ -5,11 +5,7 @@ import { Link } from "gatsby"
 import "./footer.scss"
 
 const Footer = () => (
-  <footer className="footer"
-    style={{
-      marginTop: `2rem`,
-    }}
-  >
+  <footer className="footer">
     © Kalyn Beach {new Date().getFullYear()}
     {` `}
   </footer>

@@ -1,0 +1,13 @@
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  .layout-inner {
+    max-width: 960px;
+    // margin: 0 auto;
+    padding: 0 1.0875rem 1.45rem;
+  }
+}
