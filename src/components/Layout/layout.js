@@ -7,9 +7,10 @@
 
 import * as React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 
 import Header from "../Header/header"
+import Nav from "../Nav/nav"
 import Footer from "../Footer/footer"
 
 import "./layout-base.css"
@@ -30,6 +31,7 @@ const Layout = ({ children }) => {
     <div className="layout">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div className="layout-inner">
+        <Nav />
         <main>{children}</main>
       </div>
       <Footer />

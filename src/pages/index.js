@@ -9,20 +9,14 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <h1>Yo</h1>
-    <p>kalyn.eth</p>
-    {/* <StaticImage
-      src="../images/gatsby-astronaut.png"
+    <StaticImage
+      src="../images/CS-500-Gray.png"
       width={300}
-      quality={95}
+      quality={100}
       formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
+      alt="Chromie Squiggle #500"
       style={{ marginBottom: `1.45rem` }}
-    /> */}
-    <p>
-      <Link to="/about/">About</Link> <br />
-      <Link to="/work/">Work</Link> <br />
-      <Link to="/contact/">Contact</Link> <br />
-    </p>
+    />
   </Layout>
 )
 

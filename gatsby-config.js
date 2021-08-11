@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `KALYN BEACH`,
+    title: `kalyn.eth`,
     description: `What's this... a wave?`,
     author: `@kalynbeach`,
     siteUrl: `https://kalyn.eth/`,
