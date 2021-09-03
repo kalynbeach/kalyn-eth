@@ -82,10 +82,11 @@ h1 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: "VT323", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  color: #FFF;
+  font-family: "Early-GameBoy", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
+  text-transform: uppercase;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
   line-height: 1.1;
@@ -262,7 +263,7 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: "VT323", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: "Early-GameBoy", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -279,7 +280,7 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: "VT323", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: "Early-GameBoy", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -296,7 +297,7 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: "VT323", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: "Early-GameBoy", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -313,7 +314,7 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: "VT323", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: "Early-GameBoy", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -330,7 +331,7 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: "VT323", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: "Early-GameBoy", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;

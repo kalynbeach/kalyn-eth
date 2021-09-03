@@ -1,6 +1,13 @@
 @font-face {
-  font-family: "VT323";
-  src: url("../fonts/VT323-Regular.ttf");
+  font-family: "Early-GameBoy";
+  src: url("../fonts/Early-GameBoy.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "VCR-OSD-MONO";
+  src: url("../fonts/VCR-OSD-MONO.ttf");
   font-weight: normal;
   font-style: normal;
 }
