@@ -10,7 +10,7 @@ const IndexPage = () => (
     <Seo title="Root" />
     <h1>Yo. More to come... 🛠</h1>
     <StaticImage
-      src="../images/CS-500-Black.png"
+      src="../images/CS-500-Gray.png"
       width={300}
       quality={100}
       formats={["AUTO", "WEBP", "AVIF"]}

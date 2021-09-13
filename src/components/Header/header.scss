@@ -1,6 +1,9 @@
+@import "../../styles/colors.scss";
+@import "../../styles/variables.scss";
+
 header.header {
   margin: 0 0 1.45rem 0;
-  background-color: black;
+  background-color: $color-primary;
 
   .header-inner {
     max-width: 960px;
