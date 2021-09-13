@@ -8,7 +8,7 @@ import Seo from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <Seo title="Root" />
-    <h1>Yo</h1>
+    <h1>Yo. More to come... 🛠</h1>
     <StaticImage
       src="../images/CS-500-Black.png"
       width={300}

@@ -8,6 +8,7 @@ const AboutPage = () => (
   <Layout>
     <Seo title="About" />
     <h1>About</h1>
+    <h1>👷🏽‍♂️</h1>
   </Layout>
 )
 

@@ -8,6 +8,7 @@ const ContactPage = () => (
   <Layout>
     <Seo title="Contact" />
     <h1>Contact</h1>
+    <h1>🚧</h1>
   </Layout>
 )
 
