@@ -1,19 +1,29 @@
 @import "../../styles/colors.scss";
+@import "../../styles/variables.scss";
 
 aside.nav {
   padding: 0 1rem;
+
+  @media (max-width: $breakpoint-tablet) {
+    margin: 1rem 0;
+  }
 
   .nav-links {
     display: flex;
     flex-direction: column;
 
     a {
-      font-family: "Early-GameBoy";
-      font-size: 24px;
-      font-weight: 400;
       margin-bottom: 1rem;
+      font-family: "Early-GameBoy";
+      font-size: 1rem;
+      font-weight: 400;
       color: white;
       text-decoration: none;
+
+      @media (max-width: $breakpoint-tablet) {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+      }
     }
   }
 }

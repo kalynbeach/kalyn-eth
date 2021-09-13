@@ -6,7 +6,7 @@ import "./footer.scss"
 
 const Footer = () => (
   <footer className="footer">
-    © Kalyn Beach {new Date().getFullYear()}
+    <span>© Kalyn Beach {new Date().getFullYear()}</span>
     {` `}
   </footer>
 )

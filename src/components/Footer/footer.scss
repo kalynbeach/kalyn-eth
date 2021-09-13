@@ -1,6 +1,14 @@
+@import "../../styles/colors.scss";
+@import "../../styles/variables.scss";
 
 .footer {
   margin: auto 0 0;
-  padding: 0 1.0875rem 1.45rem;
+  padding: 1.45rem 2rem;
   max-width: 960px;
+
+  span {
+    font-family: "Early-GameBoy";
+    font-size: 0.75rem;
+    color: white;
+  }
 }
