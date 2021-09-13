@@ -21,13 +21,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `kalyn-eth`,
+        short_name: `kalyn-eth`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#191919`,
+        theme_color: `#191919`,
         display: `minimal-ui`,
-        icon: `src/images/CS-500-Gray.png`, // This path is relative to the root of the site.
+        icon: `src/images/CS-500-Gray.png`,
       },
     },
     `gatsby-plugin-gatsby-cloud`,
