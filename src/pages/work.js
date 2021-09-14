@@ -6,7 +6,7 @@ import Seo from "../components/seo"
 
 const WorkPage = () => (
   <Layout>
-    <Seo title="Work" />
+    <Seo title="work" />
     <h1>Work</h1>
     <h1>🏗</h1>
   </Layout>
