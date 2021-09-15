@@ -7,11 +7,11 @@ import "./header.scss"
 const Header = ({ siteTitle }) => (
   <header className="header">
     <div className="header-inner">
-      <h1>
+      <span className="header-title">
         <Link to="/">
           {siteTitle}
         </Link>
-      </h1>
+      </span>
     </div>
   </header>
 )

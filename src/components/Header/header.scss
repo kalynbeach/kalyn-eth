@@ -1,15 +1,17 @@
 @import "../../styles/colors.scss";
+@import "../../styles/mixins.scss";
 @import "../../styles/variables.scss";
 
 header.header {
-  margin: 0 0 1.45rem 0;
   background-color: $color-primary;
 
   .header-inner {
-    max-width: 960px;
-    padding: 1.45rem 2rem;
+    @include layout-inner;
+    min-height: $min-height-header;
+    padding: 2rem;
 
-    h1 {
+    span.header-title {
+      font-family: $font-family-head;
       font-size: 1.25rem;
       margin: 0;
 
