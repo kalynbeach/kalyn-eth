@@ -8,10 +8,10 @@
   padding-left: 2rem;
   padding-right: 2rem;
 
-  @media (min-width: $breakpoint-tablet) {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+  // @media (min-width: $breakpoint-tablet) {
+  //   padding-left: 1rem;
+  //   padding-right: 1rem;
+  // }
 
   @media (min-width: $breakpoint-desktop) {
     max-width: $max-width-inner;

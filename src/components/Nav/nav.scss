@@ -2,15 +2,20 @@
 @import "../../styles/variables.scss";
 
 aside.nav {
-  // padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 
   @media (max-width: $breakpoint-tablet) {
     margin: 1rem 0;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .nav-links {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 
     a {
       margin-bottom: 1rem;
@@ -21,9 +26,13 @@ aside.nav {
       text-decoration: none;
 
       @media (max-width: $breakpoint-tablet) {
-        font-size: 1.25rem;
-        margin-bottom: 1.5rem;
+        font-size: 1rem;
+        margin-bottom: 0rem;
       }
     }
+  }
+
+  .squiggle {
+    // max-width: 100px;
   }
 }
