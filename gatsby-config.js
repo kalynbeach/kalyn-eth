@@ -5,11 +5,11 @@ module.exports = {
     author: `@kalynbeach`,
     siteUrl: `https://kalyn.eth/`,
   },
-  pathPrefix: '__GATSBY_IPFS_PATH_PREFIX__',
+  // pathPrefix: '__GATSBY_IPFS_PATH_PREFIX__',
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-    'gatsby-plugin-ipfs',
+    // 'gatsby-plugin-ipfs',
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
