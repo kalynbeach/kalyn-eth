@@ -12,14 +12,21 @@ const Nav = () => (
       <Link to="/work/">Work</Link>
       <Link to="/contact/">Contact</Link>
     </div>
-    <StaticImage
-      src="../../images/CS-500-Gray.png"
-      width={150}
-      quality={100}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="Chromie Squiggle #500"
-      className="squiggle"
-    />
+    <a href="https://artblocks.io/token/500"
+      aria-label="Chromie Squiggle #500"
+      target="_blank"
+      rel="noopener noreferrer">
+      <StaticImage
+        src="../../images/CS-500-Gray.png"
+        title="Proud owner of Chromie Squiggle #500"
+        width={150}
+        quality={100}
+        placeholder="blurred"
+        formats={["AUTO", "WEBP", "AVIF"]}
+        alt="Chromie Squiggle #500"
+        className="squiggle"
+      />
+    </a>
   </aside>
 )
 

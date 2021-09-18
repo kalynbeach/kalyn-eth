@@ -255,16 +255,6 @@ dd {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
-p {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
 pre {
   margin-left: 0;
   margin-right: 0;
@@ -343,9 +333,6 @@ address {
   margin-bottom: 1.45rem;
 }
 b {
-  font-weight: bold;
-}
-strong {
   font-weight: bold;
 }
 dt {

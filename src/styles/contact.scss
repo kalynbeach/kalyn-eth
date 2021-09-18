@@ -1,0 +1,27 @@
+@import "./variables.scss";
+
+.contact-grid {
+  width: 60%;
+  // margin-left: auto;
+  display: grid;
+  grid-template-columns: 0.5fr 0.25fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  // grid-template-areas: "app handle";
+
+  @media (max-width: $breakpoint-tablet) {
+    width: 100%;
+  }
+
+  .contact-app {
+    grid-column: 1;
+  }
+
+  .contact-mid {
+    grid-column: 2;
+    content: "=>";
+  }
+
+  .contact-handle {
+    grid-column: 3;
+  }
+}

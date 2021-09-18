@@ -29,14 +29,21 @@
       // margin: 0 1rem;
       margin-left: 2rem;
       flex: 1 0;
-      text-align: end; // TODO: Remove and use grid
+      display: flex;
+      flex-direction: column;
+      justify-content: baseline;
+      //text-align: end; // TODO: Remove and use grid
 
       @media (max-width: $breakpoint-tablet) {
-        margin: 0 0 0 1rem;
+        margin: 0;
       }
 
       @media (min-width: $breakpoint-desktop) {
         margin: 0 0 0 2rem;
+      }
+
+      h1 {
+        margin-left: auto;
       }
     }
   }
