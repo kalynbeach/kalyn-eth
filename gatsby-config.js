@@ -8,9 +8,10 @@ module.exports = {
   pathPrefix: '__GATSBY_IPFS_PATH_PREFIX__',
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-image`,
-    'gatsby-plugin-ipfs',
     `gatsby-plugin-sass`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -18,8 +19,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -29,10 +28,19 @@ module.exports = {
         background_color: `#191919`,
         theme_color: `#191919`,
         display: `minimal-ui`,
-        icon: `src/images/CS-500-Gray.png`,
+        legacy: false,
+        icon: `src/images/CS-500-Gray.png`
+        // icons: [
+        //   {
+        //     src: `src/images/CS-500-Gray.png`,
+        //     sizes: `144x144`,
+        //     type: `image/png`,
+        //   },
+        // ]
       },
     },
-    `gatsby-plugin-gatsby-cloud`,
+    `gatsby-plugin-ipfs`
+    // `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
