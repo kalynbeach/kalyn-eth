@@ -1,7 +1,7 @@
 import * as React from "react"
 // import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 
 import "./nav.scss"
 
@@ -16,14 +16,14 @@ const Nav = () => (
       aria-label="Chromie Squiggle #500"
       target="_blank"
       rel="noopener noreferrer">
-      {/* <img
+      <img
         src="/CS-500-Gray.png"
         className="squiggle"
         title="Proud owner of Chromie Squiggle #500"
         alt="Chromie Squiggle #500"
         width={150}
-      /> */}
-      <StaticImage
+      />
+      {/* <StaticImage
         src="../../images/CS-500-Gray.png"
         title="Proud owner of Chromie Squiggle #500"
         width={150}
@@ -33,7 +33,7 @@ const Nav = () => (
         formats={["AUTO", "WEBP", "AVIF"]}
         alt="Chromie Squiggle #500"
         className="squiggle"
-      />
+      /> */}
     </a>
   </aside>
 )
