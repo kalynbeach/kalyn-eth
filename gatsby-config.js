@@ -7,6 +7,7 @@ module.exports = {
   },
   pathPrefix: '__GATSBY_IPFS_PATH_PREFIX__',
   plugins: [
+    `gatsby-plugin-ipfs`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
@@ -38,8 +39,7 @@ module.exports = {
         //   },
         // ]
       },
-    },
-    `gatsby-plugin-ipfs`
+    }
     // `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
