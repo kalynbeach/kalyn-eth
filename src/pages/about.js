@@ -31,14 +31,17 @@ const AboutPage = () => (
             <li>{"-> React.js"}</li>
             <li>{"-> Vue.js"}</li>
             <li>Python</li>
+            <li>{"-> Flask"}</li>
+            <li>{"-> Django"}</li>
             <li>MongoDB</li>
             <li>SQL</li>
           </ul>
         </div>
         <div className="stack">
-          <strong>Currently Learning:</strong>
+          <strong>Studying:</strong>
           <ul>
             <li>Solidity</li>
+            <li>TypeScript</li>
             <li>Truffle</li>
             <li>Web3.js</li>
             <li>p5.js</li>

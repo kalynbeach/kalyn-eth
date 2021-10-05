@@ -18,21 +18,31 @@ aside.nav {
     justify-content: space-evenly;
 
     a {
-      margin-bottom: 1rem;
       font-family: "Early-GameBoy";
       font-size: 1rem;
       font-weight: 400;
       color: white;
       text-decoration: none;
 
+      &:not(:last-of-type) {
+        margin-bottom: 2rem;
+      }
+
       @media (max-width: $breakpoint-tablet) {
-        font-size: 1rem;
-        margin-bottom: 0rem;
+        &:not(:last-of-type) {
+          margin-bottom: 1rem;
+        }
       }
     }
   }
 
-  .squiggle {
-    // max-width: 100px;
+  a.nav-img-link {
+
+    .nav-img {
+      // margin-bottom: 0;
+      @media (max-width: $breakpoint-tablet) {
+        margin-bottom: 0;
+      }
+    }
   }
 }

@@ -13,12 +13,13 @@ const Nav = () => (
       <Link to="/contact/">Contact</Link>
     </div>
     <a href="https://artblocks.io/token/500"
+      className="nav-img-link"
       aria-label="Chromie Squiggle #500"
       target="_blank"
       rel="noopener noreferrer">
       <img
         src="/CS-500-Gray.png"
-        className="squiggle"
+        className="nav-img"
         title="Proud owner of Chromie Squiggle #500"
         alt="Chromie Squiggle #500"
         width={150}
