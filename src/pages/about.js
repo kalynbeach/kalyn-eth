@@ -27,6 +27,7 @@ const AboutPage = () => (
           <strong>Experienced:</strong>
           <ul>
             <li>JavaScript (+HTML+CSS)</li>
+            <li>{"-> TypeScript"}</li>
             <li>{"-> Node.js"}</li>
             <li>{"-> React.js"}</li>
             <li>{"-> Vue.js"}</li>
@@ -41,12 +42,12 @@ const AboutPage = () => (
           <strong>Studying:</strong>
           <ul>
             <li>Solidity</li>
-            <li>TypeScript</li>
+            <li>Hardhat</li>
             <li>Truffle</li>
-            <li>Web3.js</li>
+            <li>IPFS</li>
+            <li>ENS</li>
             <li>p5.js</li>
             <li>{"-> p5.sound"}</li>
-            <li>IPFS</li>
           </ul>
         </div>
       </div>
