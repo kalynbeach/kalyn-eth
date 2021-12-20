@@ -3,7 +3,7 @@ import * as React from "react"
 
 import Layout from "../components/Layout/layout"
 import Seo from "../components/seo"
-import WorkJSON from "../../content/work.json"
+import WorkJSON from "../content/work.json"
 
 import "../styles/work.scss"
 

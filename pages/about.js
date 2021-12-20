@@ -1,6 +1,4 @@
 import * as React from "react"
-// import { Link } from "gatsby"
-
 import Layout from "../components/Layout/layout"
 import Seo from "../components/seo"
 import AboutJSON from "../../content/about.json"
