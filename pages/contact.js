@@ -1,31 +1,31 @@
-import * as React from "react"
-import Layout from "../components/Layout/layout"
-import Seo from "../components/seo"
+import Head from 'next/head'
+import Layout, { siteTitle } from '../components/layout'
+import styles from '../styles/contact.module.scss'
 
-import "../styles/contact.scss"
+export default function Contact() {
+  return (
+    <Layout>
+      <Head>
+        <title>{`${siteTitle} - contact`}</title>
+      </Head>
+      <h1>Contact</h1>
+      <div className={styles.contactGrid}>
+        <span className={styles.contactApp}>Discord</span>
+        <span className={styles.contactSep}>{'=>'}</span>
+        <span className={styles.contactHandle}>kalyn.eth#0824</span>
 
-const ContactPage = () => (
-  <Layout>
-    <Seo title="contact" />
-    <h1>Contact</h1>
-    <div className="contact-grid">
-      <span className="contact-app">Discord</span>
-      <span className="contact-mid">{"=>"}</span>
-      <span className="contact-handle">KB#8447</span>
+        <span className={styles.contactApp}>GitHub</span>
+        <span className={styles.contactSep}>{'=>'}</span>
+        <span className={styles.contactHandle}>@kalynbeach</span>
 
-      <span className="contact-app">GitHub</span>
-      <span className="contact-mid">{"=>"}</span>
-      <span className="contact-handle">@kalynbeach</span>
+        <span className={styles.contactApp}>Twitter</span>
+        <span className={styles.contactSep}>{'=>'}</span>
+        <span className={styles.contactHandle}>@kalynbeach</span>
 
-      <span className="contact-app">Twitter</span>
-      <span className="contact-mid">{"=>"}</span>
-      <span className="contact-handle">@kalynbeach</span>
-
-      <span className="contact-app">Email</span>
-      <span className="contact-mid">{"=>"}</span>
-      <span className="contact-handle">kalynbeach @ gmail . com</span>
-    </div>
-  </Layout>
-)
-
-export default ContactPage
+        <span className={styles.contactApp}>Email</span>
+        <span className={styles.contactSep}>{'=>'}</span>
+        <span className={styles.contactHandle}>kalynbeach at gmail dot com</span>
+      </div>
+    </Layout>
+  )
+}

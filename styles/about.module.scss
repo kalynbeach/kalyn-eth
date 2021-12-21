@@ -1,16 +1,16 @@
 @import "./variables.module.scss";
 
-.about-statement {
+.aboutStatement {
   margin-bottom: 2rem;
 }
 
-.about-tech {
+.aboutTech {
 
   h2 {
     margin-bottom: 2rem;
   }
 
-  .tech-stacks {
+  .techStacks {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

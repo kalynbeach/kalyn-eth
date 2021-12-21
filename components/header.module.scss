@@ -1,10 +1,10 @@
-@import "../../styles/mixins.module.scss";
-@import "../../styles/variables.module.scss";
+@import '../styles/mixins.module.scss';
+@import '../styles/variables.module.scss';
 
 header.header {
   background-color: $color-primary;
 
-  .header-inner {
+  .headerInner {
     @include layout-inner;
     min-height: $min-height-header;
     display: flex;
@@ -12,7 +12,7 @@ header.header {
     justify-content: flex-start;
     align-items: center;
 
-    span.header-title {
+    span.headerTitle {
       font-family: $font-family-head;
       font-size: 1.25rem;
       margin: 0;

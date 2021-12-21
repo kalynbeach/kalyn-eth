@@ -1,6 +1,6 @@
-@import "../../styles/variables.module.scss";
+@import '../styles/variables.module.scss';
 
-aside.nav {
+.nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -11,13 +11,13 @@ aside.nav {
     justify-content: space-between;
   }
 
-  .nav-links {
+  .navLinks {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 
     a {
-      font-family: "Early-GameBoy";
+      font-family: 'Early-GameBoy';
       font-size: 1rem;
       font-weight: 400;
       color: white;
@@ -35,9 +35,9 @@ aside.nav {
     }
   }
 
-  a.nav-img-link {
+  a.navImgLink {
 
-    .nav-img {
+    .navImg {
       // margin-bottom: 0;
       @media (max-width: $breakpoint-tablet) {
         margin-bottom: 0;

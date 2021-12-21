@@ -1,11 +1,11 @@
 @import "./variables.module.scss";
 
-.work-grid {
+.workGrid {
   width: 100%;
   display: flex;
   flex-direction: column;
 
-  .work-position {
+  .workPosition {
     margin-bottom: 2rem;
     display: grid;
     grid-template-columns: auto auto 1fr;
@@ -17,14 +17,14 @@
 
     grid-row: 3;
 
-    .position-period {
+    .positionPeriod {
       font-size: 13px;
       grid-column: 1 / 2;
       grid-row: 1;
     }
 
-    .position-title,
-    .position-company {
+    .positionTitle,
+    .positionCompany {
       margin: auto 0;
       font-size: 16px;
       font-weight: bold;
@@ -34,7 +34,7 @@
       }
     }
 
-    .position-title {
+    .positionTitle {
       grid-column: 1;
       grid-row: 2;
 
@@ -49,7 +49,7 @@
       }
     }
 
-    .position-company {
+    .positionCompany {
       grid-column: 2;
       grid-row: 2;
 
@@ -59,7 +59,7 @@
       }
     }
 
-    .position-desc {
+    .positionDesc {
       font-size: 15px;
       grid-column: 1 / 4;
       grid-row: 3;

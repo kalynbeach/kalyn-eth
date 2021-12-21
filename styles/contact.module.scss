@@ -1,6 +1,6 @@
 @import "./variables.module.scss";
 
-.contact-grid {
+.contactGrid {
   width: 60%;
   // margin-left: auto;
   display: grid;
@@ -12,16 +12,16 @@
     width: 100%;
   }
 
-  .contact-app {
+  .contactApp {
     grid-column: 1;
   }
 
-  .contact-mid {
+  .contactSep {
     grid-column: 2;
     content: "=>";
   }
 
-  .contact-handle {
+  .contactHandle {
     grid-column: 3;
   }
 }

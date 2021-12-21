@@ -1,31 +1,32 @@
-import * as React from "react"
-// import { Link } from "gatsby"
+import Head from 'next/head'
+import Layout, { siteTitle } from '../components/layout'
+import styles from '../styles/work.module.scss'
 
-import Layout from "../components/Layout/layout"
-import Seo from "../components/seo"
-import WorkJSON from "../content/work.json"
+import WorkJSON from '../content/work.json'
 
-import "../styles/work.scss"
+export default function Work() {
+  return (
+    <Layout>
+      <Head>
+        <title>{`${siteTitle} - work`}</title>
+      </Head>
+      <h1>{ WorkJSON.title }</h1>
+      <div className={styles.workGrid}>
+        {
+          WorkJSON.history.map((position, index) => {
+            return (
+              <div className={styles.workPosition} key={`work_history_${index}`}>
+                <span className={styles.positionPeriod}>{ position.period }</span>
+                <span className={styles.positionTitle}>{ position.title }</span>
+                <span className={styles.positionCompany}>{ position.company }</span>
+                <p className={styles.positionDesc}>{ position.description }</p>
+              </div>
+            )
+          })
+        }
+      </div>
+    </Layout>
+  )
+}
 
-const WorkPage = () => (
-  <Layout>
-    <Seo title="work" />
-    <h1>{ WorkJSON.title }</h1>
-    <div className="work-grid">
-      {
-        WorkJSON.history.map((position, index) => {
-          return (
-            <div className="work-position" key={`work_history_${index}`}>
-              <span className="position-period">{ position.period }</span>
-              <span className="position-title">{ position.title }</span>
-              <span className="position-company">{ position.company }</span>
-              <p className="position-desc">{ position.description }</p>
-            </div>
-          )
-        })
-      }
-    </div>
-  </Layout>
-)
 
-export default WorkPage
