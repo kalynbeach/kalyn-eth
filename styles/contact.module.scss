@@ -1,27 +1,31 @@
 @import "./variables.module.scss";
 
 .contactGrid {
-  width: 60%;
-  // margin-left: auto;
-  display: grid;
-  grid-template-columns: 0.5fr 0.25fr 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  // grid-template-areas: "app handle";
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 
   @media (max-width: $breakpoint-tablet) {
     width: 100%;
   }
 
-  .contactApp {
-    grid-column: 1;
-  }
+  .contactGridEntry {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-  .contactSep {
-    grid-column: 2;
-    content: "=>";
-  }
-
-  .contactHandle {
-    grid-column: 3;
+    .contactApp {
+      flex: 0 1 30%;
+    }
+  
+    .contactSep {
+      flex: 1;
+      content: "=>";
+    }
+  
+    .contactHandle {
+      grid-column: 3;
+    }
   }
 }

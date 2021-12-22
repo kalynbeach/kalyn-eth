@@ -4,18 +4,30 @@ import styles from '../styles/about.module.scss'
 
 import AboutJSON from '../content/about.json'
 
-export default function About() {
+const pageTitle = 'about'
+const pageHeading = 'gm'
+
+export async function getStaticProps() {
+  const content = AboutJSON.body
+  return {
+    props: {
+      content
+    }
+  }
+}
+
+export default function About({ content }) {
   return (
     <Layout>
       <Head>
-        <title>{`${siteTitle} - about`}</title>
+        <title>{`${siteTitle} - ${pageTitle}`}</title>
       </Head>
-      <h1>{ AboutJSON.title }</h1>
-      <strong>{ AboutJSON.heading }</strong>
+      <h1>{ pageTitle }</h1>
+      <strong>{pageHeading}</strong>
       <br/>
       <div className={styles.aboutStatement}>
         {
-          AboutJSON.body.map((p, index) => {
+          content.map((p, index) => {
             return <p key={`about_body_${index}`}>{ p.text }</p>
           })
         }
@@ -54,4 +66,4 @@ export default function About() {
       </div>
     </Layout>
   )
-}
+} 

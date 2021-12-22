@@ -4,16 +4,29 @@ import styles from '../styles/work.module.scss'
 
 import WorkJSON from '../content/work.json'
 
-export default function Work() {
+const pageTitle = 'work'
+const pageHeading = ''
+
+export async function getStaticProps() {
+  const history = WorkJSON.history
+  return {
+    props: {
+      history
+    }
+  }
+}
+
+export default function Work({ history }) {
   return (
     <Layout>
       <Head>
         <title>{`${siteTitle} - work`}</title>
       </Head>
-      <h1>{ WorkJSON.title }</h1>
+      <h1>{pageTitle}</h1>
+      <strong>{pageHeading}</strong>
       <div className={styles.workGrid}>
         {
-          WorkJSON.history.map((position, index) => {
+          history.map((position, index) => {
             return (
               <div className={styles.workPosition} key={`work_history_${index}`}>
                 <span className={styles.positionPeriod}>{ position.period }</span>
