@@ -2,7 +2,7 @@
 @import '../styles/variables.module.scss';
 
 header.header {
-  background-color: $color-primary;
+  background-color: $color-background-dark;
 
   .headerInner {
     @include layout-inner;

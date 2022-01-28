@@ -2,7 +2,7 @@
 @import '../styles/variables.module.scss';
 
 .footer {
-  margin: auto 0 0;
+  margin: 4rem 0 0;
 
   .footerInner {
     @include layout-inner;

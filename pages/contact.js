@@ -5,7 +5,7 @@ import styles from '../styles/contact.module.scss'
 import ContactJSON from '../content/contact.json'
 
 const pageTitle = 'contact'
-const pageHeading = ''
+const pageHeading = 'loading...'
 
 export async function getStaticProps() {
   const info = ContactJSON.info

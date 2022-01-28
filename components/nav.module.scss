@@ -1,6 +1,7 @@
 @import '../styles/variables.module.scss';
 
 .nav {
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -35,13 +36,13 @@
     }
   }
 
-  a.navImgLink {
-
-    .navImg {
-      // margin-bottom: 0;
-      @media (max-width: $breakpoint-tablet) {
-        margin-bottom: 0;
-      }
+  .navImg {
+    margin-top: auto;
+    a.navImgLink {
+  
+      // @media (max-width: $breakpoint-tablet) {
+      //   margin-bottom: 0;
+      // }
     }
   }
 }

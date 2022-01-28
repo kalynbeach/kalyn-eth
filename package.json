@@ -3,7 +3,7 @@
   "private": true,
   "description": "A website: kalyn.eth",
   "version": "1.0.0",
-  "author": "Kalyn Beach <kalynbeach@gmail.com>",
+  "author": "Kalyn Beach",
   "dependencies": {
     "next": "latest",
     "react": "latest",

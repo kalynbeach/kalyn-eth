@@ -5,7 +5,7 @@ import styles from '../styles/about.module.scss'
 import AboutJSON from '../content/about.json'
 
 const pageTitle = 'about'
-const pageHeading = 'gm'
+const pageHeading = 'loading...'
 
 export async function getStaticProps() {
   const content = AboutJSON.body
@@ -26,11 +26,11 @@ export default function About({ content }) {
       <strong>{pageHeading}</strong>
       <br/>
       <div className={styles.aboutStatement}>
-        {
+        {/* {
           content.map((p, index) => {
             return <p key={`about_body_${index}`}>{ p.text }</p>
           })
-        }
+        } */}
       </div>
       <div className={styles.aboutTech}>
         <h2>Tech</h2>

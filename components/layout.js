@@ -3,9 +3,8 @@ import Header from './header'
 import Nav from './nav'
 import Footer from './footer'
 import styles from './layout.module.scss'
-import utilStyles from '../styles/utils.module.scss'
+// import utilStyles from '../styles/utils.module.scss'
 
-const name = 'Kalyn'
 export const siteTitle = 'kalyn.eth'
 
 export default function Layout({ children, home }) {
