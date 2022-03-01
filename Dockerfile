@@ -1,45 +1,57 @@
-# syntax=docker/dockerfile:1
-
 #
-# Stage 1: Build static assets
+# Install dependencies only when needed
 #
-
-FROM node:17 AS build
-
+FROM node:16-alpine AS deps
+# Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
+RUN apk add --no-cache libc6-compat
 WORKDIR /app
+COPY package.json package-lock.json ./
+RUN npm install --frozen-lockfile
 
-COPY package.json /app/package.json
-COPY package-lock.json /app/package-lock.json
+# If using npm with a `package-lock.json` comment out above and use below instead
+# COPY package.json package-lock.json ./ 
+# RUN npm ci
 
-RUN npm ci
+#
+# Rebuild the source code only when needed
+#
+FROM node:16-alpine AS builder
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
+COPY . .
 
-COPY . /app
-
-ENV CI=true
-ENV PORT=3000
-
-# TODO: Run tests
+# Uncomment the following line in case you want to disable telemetry during the build.
+ENV NEXT_TELEMETRY_DISABLED 1
 
 RUN npm run build
 
-
 #
-# Stage 2: Serve static assets
-#
+# Production image, copy all the files and run next
+# 
+FROM node:16-alpine AS runner
+WORKDIR /app
 
-FROM nginx:alpine
+ENV NODE_ENV production
+# Uncomment the following line in case you want to disable telemetry during runtime.
+ENV NEXT_TELEMETRY_DISABLED 1
 
-COPY --from=build /app/.nginx/nginx.conf /etc/nginx/conf.d/default.conf
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nextjs
 
-WORKDIR /usr/share/nginx/html
+# You only need to copy next.config.js if you are NOT using the default configuration
+# COPY --from=builder /app/next.config.js ./
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/package.json ./package.json
 
-# Remove default nginx static assets
-RUN rm -rf ./*
+# Automatically leverage output traces to reduce image size 
+# https://nextjs.org/docs/advanced-features/output-file-tracing
+COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
-# Bring in static assets from build state
-COPY --from=build /app/public .
+USER nextjs
 
-# Run nginx with global directives and daemon off
-ENTRYPOINT [ "nginx", "-g", "daemon off;" ]
+EXPOSE 3000
 
+ENV PORT 3000
 
+CMD ["node", "server.js"]

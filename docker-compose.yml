@@ -1,8 +1,0 @@
-version: "3.9"
-services:
-  site:
-    build:
-      context: .
-    container_name: kalyn-eth
-    ports:
-      - "80:80"

@@ -1,0 +1,22 @@
+// Colors
+$color-background-primary: hsl(20, 11%, 5%); // #0F0D0C
+$color-background-secondary: hsl(0, 0%, 8%); // #141414
+$color-background-blue: hsl(220, 21%, 8%); // #11141A
+$color-dark-primary: #141414;
+$color-dark-secondary: #191919;
+$color-dark-gray: #242424;
+
+// Font Families
+$font-family-head: "Early-GameBoy";
+$font-family-body: "DMMono";
+
+// Layout
+$max-width-inner: 860px;
+$min-height-header: 100px;
+$min-height-footer: 100px;
+
+// Media Query Breakpoints
+$breakpoint-phone: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+$breakpoint-desktop-large: 1200px;

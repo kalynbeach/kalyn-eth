@@ -1,0 +1,73 @@
+@import "./variables.module.scss";
+
+.workGrid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .workPosition {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    grid-template-rows: 1.25rem 3rem 1fr;
+
+    @media (max-width: $breakpoint-tablet) {
+      grid-template-rows: 1.5rem 1.5rem auto 1fr;
+    }
+
+    grid-row: 3;
+
+    .positionPeriod {
+      font-size: 13px;
+      grid-column: 1 / 2;
+      grid-row: 1;
+    }
+
+    .positionTitle,
+    .positionCompany {
+      margin: auto 0;
+      font-size: 16px;
+      font-weight: bold;
+
+      @media (max-width: $breakpoint-tablet) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .positionTitle {
+      grid-column: 1;
+      grid-row: 2;
+
+      @media (max-width: $breakpoint-tablet) {
+        grid-column: 1 / 4;
+        grid-row: 2;
+      }
+
+      &::after {
+        margin: auto 1rem;
+        content: "@";
+      }
+    }
+
+    .positionCompany {
+      grid-column: 2;
+      grid-row: 2;
+
+      @media (max-width: $breakpoint-tablet) {
+        grid-column: 1 / 4;
+        grid-row: 3;
+      }
+    }
+
+    .positionDesc {
+      font-size: 15px;
+      grid-column: 1 / 4;
+      grid-row: 3;
+
+      @media (max-width: $breakpoint-tablet) {
+        font-size: 14px;
+        grid-row: 4;
+      }
+    }
+  }
+}

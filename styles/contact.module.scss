@@ -1,0 +1,31 @@
+@import "./variables.module.scss";
+
+.contactGrid {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $breakpoint-tablet) {
+    width: 100%;
+  }
+
+  .contactGridEntry {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .contactApp {
+      flex: 0 1 30%;
+    }
+  
+    .contactSep {
+      flex: 1;
+      content: "=>";
+    }
+  
+    .contactHandle {
+      grid-column: 3;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import "./variables.module.scss";
+
+.aboutStatement {
+  margin-bottom: 2rem;
+}
+
+.aboutTech {
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  .techStacks {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    @media (max-width: $breakpoint-tablet) {
+      flex-direction: column;
+    }
+
+    .stack {
+      &:last-of-type {
+        margin-left: 4rem;
+        @media (max-width: $breakpoint-tablet) {
+          margin: 2rem 0 0 0;
+        }
+      }
+
+      ul {
+        list-style: none;
+        margin: 0 0 0 2rem;
+        @media (max-width: $breakpoint-tablet) {
+          margin: 0 0 0 1rem;
+        };
+      }
+    }
+  }
+}
