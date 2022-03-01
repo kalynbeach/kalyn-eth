@@ -25,19 +25,19 @@
     // nav.nav {}
 
     main {
-      margin: 0 1rem;
-      padding: 0 1rem;
+      // margin: 0 1rem;
+      // padding: 0 1rem;
       flex: 1 0;
       display: flex;
       flex-direction: column;
       justify-content: baseline;
 
-      @media (max-width: $breakpoint-tablet) {
-        margin: 0;
+      @media (min-width: $breakpoint-tablet) {
+        margin: 0 0 2rem 4rem;
       }
 
       @media (min-width: $breakpoint-desktop) {
-        margin: 0 0 2rem 2rem;
+        margin: 0 0 2rem 6rem;
       }
 
       h1 {
