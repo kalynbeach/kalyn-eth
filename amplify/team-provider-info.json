@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-kalyneth-dev-164711-authRole",
+      "UnauthRoleArn": "arn:aws:iam::751256579710:role/amplify-kalyneth-dev-164711-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::751256579710:role/amplify-kalyneth-dev-164711-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-kalyneth-dev-164711-deployment",
+      "UnauthRoleName": "amplify-kalyneth-dev-164711-unauthRole",
+      "StackName": "amplify-kalyneth-dev-164711",
+      "StackId": "arn:aws:cloudformation:us-west-1:751256579710:stack/amplify-kalyneth-dev-164711/e8399970-a7de-11ec-9ad5-060854b9c2a3",
+      "AmplifyAppId": "dhqjv75muupir"
+    }
+  }
+}
