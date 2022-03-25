@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from './nav.module.scss'
+import styles from '../styles/components/nav.module.scss'
 // import Image from 'next/image'
 
 // import squiggle500 from '../public/images/CS-500-Gray.png'
@@ -8,9 +8,9 @@ export default function Nav() {
   return (
     <nav className={styles.nav}>
       <div className={styles.navLinks}>
-        <Link href='/about'><a>About</a></Link>
-        <Link href='/work'><a>Work</a></Link>
-        <Link href='/contact'><a>Contact</a></Link>
+        <Link href='/about'><a>about</a></Link>
+        <Link href='/work'><a>work</a></Link>
+        <Link href='/contact'><a>contact</a></Link>
       </div>
       <div className={styles.navImg}>
         {/* <a href='https://artblocks.io/token/500'

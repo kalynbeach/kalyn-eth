@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Header from './header'
 import Nav from './nav'
 import Footer from './footer'
-import styles from './layout.module.scss'
+import styles from '../styles/components/layout.module.scss'
 // import utilStyles from '../styles/utils.module.scss'
 
 export const siteTitle = 'kalyn.eth'
@@ -18,7 +18,6 @@ export default function Layout({ children, home }) {
       </Head>
       <Header siteTitle={siteTitle || `kalyn.eth`} />
       <div className={styles.layoutInner}>
-        <Nav />
         <main>
           {children}
         </main>

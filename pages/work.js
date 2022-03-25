@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
-import styles from '../styles/work.module.scss'
+import styles from '../styles/pages/work.module.scss'
 
 import WorkJSON from '../content/work.json'
 

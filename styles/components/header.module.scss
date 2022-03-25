@@ -1,5 +1,5 @@
-@import '../styles/mixins.module.scss';
-@import '../styles/variables.module.scss';
+@import '../mixins.module.scss';
+@import '../variables.module.scss';
 
 header.header {
   background-color: $color-background-primary;
@@ -9,8 +9,16 @@ header.header {
     min-height: $min-height-header;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+
+    @media (max-width: $breakpoint-tablet) {
+      margin: 0 0 2rem;
+      padding: 4rem 2rem;
+      flex-direction: column;
+      // justify-content: space-around;
+      align-items: stretch;
+    }
 
     span.headerTitle {
       font-family: $font-family-head;

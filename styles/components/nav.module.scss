@@ -1,36 +1,35 @@
-@import '../styles/variables.module.scss';
+@import '../variables.module.scss';
 
 .nav {
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-start;
 
   @media (max-width: $breakpoint-tablet) {
-    margin: 0 0 2rem;
+    // margin: 0 0 2rem;
     flex-direction: row;
     justify-content: space-between;
   }
 
   .navLinks {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-between;
 
     a {
-      font-family: 'Early-GameBoy';
+      font-family: $font-family-head;
       font-size: 1rem;
       font-weight: 400;
       color: white;
       text-decoration: none;
 
       &:not(:last-of-type) {
-        margin-bottom: 2rem;
+        margin-right: 2rem;
       }
 
       @media (max-width: $breakpoint-tablet) {
         &:not(:last-of-type) {
-          margin-bottom: 1rem;
+          // margin-bottom: 1rem;
         }
       }
     }

@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import styles from './header.module.scss'
+import Nav from './nav'
+import styles from '../styles/components/header.module.scss'
 
 export default function Header({ siteTitle }) {
   return (
@@ -10,6 +11,7 @@ export default function Header({ siteTitle }) {
             <a>{siteTitle}</a>
           </Link>
         </span>
+        <Nav />
       </div>
     </header>
   )
