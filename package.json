@@ -29,5 +29,8 @@
   },
   "bugs": {
     "url": "https://github.com/kalynbeach/kalyn-eth/issues"
+  },
+  "devDependencies": {
+    "@styled-jsx/plugin-sass": "^4.0.2"
   }
 }
