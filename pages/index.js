@@ -13,6 +13,10 @@ export default function Home() {
       <h1>{pageTitle}</h1>
       <strong>{pageHeading}</strong>
       {/* <p></p> */}
+
+      <style jsx>{`
+        
+      `}</style>
     </Layout>
   )
 }

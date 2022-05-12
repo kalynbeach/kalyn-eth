@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
-import styles from '../styles/pages/about.module.scss'
+// import styles from '../styles/pages/about.module.scss'
 
 import AboutJSON from '../content/about.json'
 
@@ -25,17 +25,17 @@ export default function About({ content }) {
       <h1>{ pageTitle }</h1>
       <strong>{pageHeading}</strong>
       <br/>
-      <div className={styles.aboutStatement}>
+      <div className='about-statement'>
         {/* {
           content.map((p, index) => {
             return <p key={`about_body_${index}`}>{ p.text }</p>
           })
         } */}
       </div>
-      <div className={styles.aboutTech}>
+      <div className='about-tech'>
         <h2>Tech</h2>
-        <div className={styles.techStacks}>
-          <div className={styles.stack}>
+        <div className='tech-stacks'>
+          <div className='stack'>
             <strong>Experienced:</strong>
             <ul>
               <li>JavaScript (+HTML+CSS)</li>
@@ -50,7 +50,7 @@ export default function About({ content }) {
               <li>SQL</li>
             </ul>
           </div>
-          <div className={styles.stack}>
+          <div className='stack'>
             <strong>Studying:</strong>
             <ul>
               <li>Solidity</li>
@@ -64,6 +64,48 @@ export default function About({ content }) {
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @import "../styles/variables.module.scss";
+
+        .about-statement {
+          margin-bottom: 2rem;
+        }
+
+        .about-tech {
+
+          h2 {
+            margin-bottom: 2rem;
+          }
+
+          .tech-stacks {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+
+            @media (max-width: $breakpoint-tablet) {
+              flex-direction: column;
+            }
+
+            .stack {
+              &:last-of-type {
+                margin-left: 4rem;
+                @media (max-width: $breakpoint-tablet) {
+                  margin: 2rem 0 0 0;
+                }
+              }
+
+              ul {
+                list-style: none;
+                margin: 0 0 0 2rem;
+                @media (max-width: $breakpoint-tablet) {
+                  margin: 0 0 0 1rem;
+                };
+              }
+            }
+          }
+        }
+      `}</style>
     </Layout>
   )
 } 

@@ -26,6 +26,7 @@ export default function Nav() {
           />
         </a> */}
       </div>
+
       <style jsx>{`
         @import '../styles/variables.module.scss';
         .nav {
