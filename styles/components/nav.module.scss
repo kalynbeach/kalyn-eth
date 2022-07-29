@@ -1,20 +1,14 @@
 @import '../variables.module.scss';
 
 .nav {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: flex-start;
-
-  @media (max-width: $breakpoint-tablet) {
-    // margin: 0 0 2rem;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 
   .navLinks {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
 
     a {
       font-family: $font-family-head;
@@ -22,26 +16,15 @@
       font-weight: 400;
       color: white;
       text-decoration: none;
+    }
 
-      &:not(:last-of-type) {
-        margin-right: 2rem;
-      }
-
-      @media (max-width: $breakpoint-tablet) {
-        &:not(:last-of-type) {
-          // margin-bottom: 1rem;
-        }
-      }
+    .activeLink {
+      color: $color-light-green;
     }
   }
 
   .navImg {
     margin-top: auto;
-    a.navImgLink {
-  
-      // @media (max-width: $breakpoint-tablet) {
-      //   margin-bottom: 0;
-      // }
-    }
+    // a.navImgLink {}
   }
 }

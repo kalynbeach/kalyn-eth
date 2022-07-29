@@ -10,38 +10,25 @@
   transition: all 0.1s;
 
   .layoutInner {
-    @include layout-inner;
     flex: 1;
     margin-bottom: auto;
-    padding-top: 2rem;
+    padding-top: 6rem;
     display: flex;
-    flex-direction: row;
-
-    @media (max-width: $breakpoint-tablet) {
-      padding-top: 1rem;
-      flex-direction: column;
-    }
-    
-    // nav.nav {}
+    flex-direction: column;
+    @include layout-inner;
 
     main {
-      // margin: 0 1rem;
-      // padding: 0 1rem;a
+      padding: 0 1rem;
       flex: 1 0;
       display: flex;
       flex-direction: column;
-      justify-content: baseline;
-
-      @media (min-width: $breakpoint-tablet) {
-        // margin: 0 0 2rem 4rem;
-      }
-
-      @media (min-width: $breakpoint-desktop) {
-        // margin: 0 0 2rem 6rem;
-      }
 
       h1 {
         margin-left: auto;
+
+        @include tablet {
+          // margin-left: 0;
+        }
       }
     }
   }

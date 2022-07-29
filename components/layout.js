@@ -16,8 +16,8 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <Header siteTitle={siteTitle || `kalyn.eth`} />
       <div className={styles.layoutInner}>
+        <Header siteTitle={siteTitle || `kalyn.eth`} />
         <main>
           {children}
         </main>
