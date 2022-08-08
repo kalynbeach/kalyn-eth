@@ -37,7 +37,6 @@
   
   @include mobile {
     flex-direction: column;
-    // gap: 6rem;
   }
 
   @include tablet {
@@ -50,8 +49,6 @@
   @include desktop {
     max-width: $inner-width-desktop;
     margin: 0 auto;
-    // padding-left: 0;
-    // padding-right: 0;
   }
 
   @include desktop-large {
