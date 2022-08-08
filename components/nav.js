@@ -1,31 +1,25 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import styles from '../styles/components/nav.module.scss'
 // import Image from 'next/image'
 
-// import squiggle500 from '../public/images/CS-500-Gray.png'
-
 export default function Nav() {
+  const router = useRouter()
+
   return (
     <nav className={styles.nav}>
       <div className={styles.navLinks}>
-        <Link href='/about'><a>about</a></Link>
-        <Link href='/work'><a>work</a></Link>
-        <Link href='/contact'><a>contact</a></Link>
+        <Link href='/about'>
+          <a className={router.pathname == '/about' ? styles.activeLink : null}>about</a>
+        </Link>
+        <Link href='/work'>
+          <a className={router.pathname == '/work' ? styles.activeLink : null}>work</a>
+        </Link>
+        <Link href='/contact'>
+          <a className={router.pathname == '/contact' ? styles.activeLink : null}>contact</a>
+        </Link>
       </div>
-      <div className={styles.navImg}>
-        {/* <a href='https://artblocks.io/token/500'
-          className={styles.navImgLink}
-          aria-label='Chromie Squiggle #500'
-          target='_blank'
-          rel='noopener noreferrer'>
-          <Image
-            src={squiggle500}
-            alt='Chromie Squiggle #500'
-            layout='responsive'
-            placeholder='blur'
-          />
-        </a> */}
-      </div>
+      {/* <div className={styles.navImg}></div> */}
     </nav>
   )
 }

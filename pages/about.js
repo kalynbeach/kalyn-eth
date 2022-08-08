@@ -32,7 +32,7 @@ export default function About({ content }) {
           })
         } */}
       </div>
-      <div className={styles.aboutTech}>
+      {/* <div className={styles.aboutTech}>
         <h2>Tech</h2>
         <div className={styles.techStacks}>
           <div className={styles.stack}>
@@ -63,7 +63,7 @@ export default function About({ content }) {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
     </Layout>
   )
 } 

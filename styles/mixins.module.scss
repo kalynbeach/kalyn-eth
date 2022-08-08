@@ -1,22 +1,57 @@
 @import "./variables.module.scss";
 
 
+@mixin mobile {
+  @media screen and (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and
+  (min-width: ($breakpoint-mobile - 1)) and
+  (max-width: ($breakpoint-desktop - 1)) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+@mixin desktop-large {
+  @media screen and (min-width: $breakpoint-desktop-large) {
+    @content;
+  }
+}
+
+
 @mixin layout-inner {
-  max-width: $max-width-inner;
-  margin: 0;
+  width: 100%;
+  max-width: $inner-width-mobile;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+  gap: 6rem;
   
-  padding-left: 2rem;
-  padding-right: 2rem;
+  @include mobile {
+    flex-direction: column;
+  }
 
-  // @media (min-width: $breakpoint-tablet) {
-  //   padding-left: 1rem;
-  //   padding-right: 1rem;
-  // }
-
-  @media (min-width: $breakpoint-desktop) {
-    width: 100%;
+  @include tablet {
+    max-width: $inner-width-tablet;
     margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @include desktop {
+    max-width: $inner-width-desktop;
+    margin: 0 auto;
+  }
+
+  @include desktop-large {
+    max-width: $inner-width-desktop-large;
   }
 }
