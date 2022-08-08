@@ -10,10 +10,12 @@ $color-light-secondary: #e4e3e3;
 $color-light-green: #1ae803;
 $color-dark-green: #11a101;
 
-// Font Families
-// $font-family-head: "PressStart2P-Regular";
+// Fonts
+$font-weight-body: 14px;
+
 $font-family-head: "IBMPlexMono-Regular";
 $font-family-body: "IBMPlexMono-Regular";
+// $font-family-head: "PressStart2P-Regular";
 // $font-family-head: "ArchivoBlack-Regular";
 // $font-family-head: "Early-GameBoy";
 // $font-family-body: "DMMono";
@@ -24,8 +26,8 @@ $inner-width-tablet: 40rem;
 $inner-width-desktop: 48rem;
 $inner-width-desktop-large: 64rem;
 
-$min-height-header: 100px;
-$min-height-footer: 100px;
+$min-height-header: 8rem;
+$min-height-footer: 14rem;
 
 $heading-margin-bottom: 6rem;
 

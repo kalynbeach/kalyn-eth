@@ -6,7 +6,7 @@ footer.footer {
   padding: 0;
 
   .footerInner {
-    min-height: $min-height-header;
+    min-height: $min-height-footer;
     padding: 0 1rem;
     display: flex;
     flex-direction: row;
@@ -50,7 +50,7 @@ footer.footer {
         text-decoration: none;
 
         &:not(:first-child) {
-          margin-left: 2rem;
+          margin-left: 3rem;
         }
       }
     }
