@@ -4,6 +4,8 @@
 header.header {
   padding: 0 1rem;
   flex: 0 0 6rem;
+  position: sticky;
+  top: 0;
   background-color: $color-background-primary;
 
   @include mobile {
