@@ -1,22 +1,24 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import styles from '../styles/pages/work.module.scss'
+// import WorkJSON from '../content/work.json'
 
-import WorkJSON from '../content/work.json'
 
 const pageTitle = 'work'
-const pageHeading = ''
+const pageHeading = 'working...'
 
-export async function getStaticProps() {
-  const history = WorkJSON.history
-  return {
-    props: {
-      history
-    }
-  }
-}
 
-export default function Work({ history }) {
+// export async function getStaticProps() {
+//   const history = WorkJSON.history
+//   return {
+//     props: {
+//       history
+//     }
+//   }
+// }
+
+
+export default function Work() {
   return (
     <Layout>
       <Head>
@@ -24,7 +26,7 @@ export default function Work({ history }) {
       </Head>
       <h1>{pageTitle}</h1>
       <strong>{pageHeading}</strong>
-      <div className={styles.workGrid}>
+      {/* <div className={styles.workGrid}>
         {
           history.map((position, index) => {
             return (
@@ -37,7 +39,7 @@ export default function Work({ history }) {
             )
           })
         }
-      </div>
+      </div> */}
     </Layout>
   )
 }

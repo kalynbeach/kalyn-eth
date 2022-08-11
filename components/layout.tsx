@@ -5,14 +5,20 @@ import Footer from './footer'
 import styles from '../styles/components/layout.module.scss'
 // import utilStyles from '../styles/utils.module.scss'
 
+
 export const siteTitle = 'kalyn.eth'
 
-export default function Layout({ children, home }) {
+type Props = {
+  children: React.ReactNode,
+
+}
+
+export default function Layout({ children }: Props) {
   return (
     <div className={styles.layout}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="kalyn.eth - Kalyn Beach's site" />
+        <meta name="description" content="kalyn.eth - Kalyn Beach" />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
