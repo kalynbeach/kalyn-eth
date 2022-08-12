@@ -1,22 +1,26 @@
+import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import styles from '../styles/pages/about.module.scss'
+// import AboutJSON from '../content/about.json'
 
-import AboutJSON from '../content/about.json'
 
 const pageTitle = 'about'
 const pageHeading = 'loading...'
 
-export async function getStaticProps() {
-  const content = AboutJSON.body
-  return {
-    props: {
-      content
-    }
-  }
-}
 
-export default function About({ content }) {
+type Props = {}
+
+
+// export const getStaticProps: GetStaticProps = async () => {
+//   const content = AboutJSON.body
+//   return {
+//     props: { content }
+//   }
+// }
+
+
+export default function About() {
   return (
     <Layout>
       <Head>
@@ -25,13 +29,13 @@ export default function About({ content }) {
       <h1>{ pageTitle }</h1>
       <strong>{pageHeading}</strong>
       <br/>
-      <div className={styles.aboutStatement}>
-        {/* {
+      {/* <div className={styles.aboutStatement}>
+        {
           content.map((p, index) => {
             return <p key={`about_body_${index}`}>{ p.text }</p>
           })
-        } */}
-      </div>
+        }
+      </div> */}
       {/* <div className={styles.aboutTech}>
         <h2>Tech</h2>
         <div className={styles.techStacks}>

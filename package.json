@@ -1,8 +1,8 @@
 {
   "name": "kalyn-eth",
   "private": true,
-  "description": "A website: kalyn.eth",
-  "version": "1.0.0",
+  "description": "A website",
+  "version": "1.0.1",
   "author": "Kalyn Beach",
   "dependencies": {
     "@aws-amplify/ui-react": "^1.2.26",
@@ -12,6 +12,12 @@
     "react-dom": "latest",
     "sass": "latest",
     "sharp": "^0.30.1"
+  },
+  "devDependencies": {
+    "@styled-jsx/plugin-sass": "^4.0.2",
+    "@types/node": "^18.7.1",
+    "@types/react": "^18.0.17",
+    "typescript": "^4.7.4"
   },
   "scripts": {
     "dev": "next dev",
@@ -29,8 +35,5 @@
   },
   "bugs": {
     "url": "https://github.com/kalynbeach/kalyn-eth/issues"
-  },
-  "devDependencies": {
-    "@styled-jsx/plugin-sass": "^4.0.2"
   }
 }

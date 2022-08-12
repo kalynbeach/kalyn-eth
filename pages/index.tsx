@@ -1,12 +1,14 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 
+
 const pageTitle = 'hello'
 const pageHeading = 'loading...'
 
+
 export default function Home() {
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>{siteTitle}</title>
       </Head>

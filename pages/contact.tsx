@@ -1,22 +1,24 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import styles from '../styles/pages/contact.module.scss'
+// import ContactJSON from '../content/contact.json'
 
-import ContactJSON from '../content/contact.json'
 
 const pageTitle = 'contact'
 const pageHeading = 'loading...'
 
-export async function getStaticProps() {
-  const info = ContactJSON.info
-  return {
-    props: {
-      info
-    }
-  }
-}
 
-export default function Contact({ info }) {
+// export async function getStaticProps() {
+//   const info = ContactJSON.info
+//   return {
+//     props: {
+//       info
+//     }
+//   }
+// }
+
+
+export default function Contact() {
   return (
     <Layout>
       <Head>
@@ -24,7 +26,7 @@ export default function Contact({ info }) {
       </Head>
       <h1>{pageTitle}</h1>
       <strong>{pageHeading}</strong>
-      <div className={styles.contactGrid}>
+      {/* <div className={styles.contactGrid}>
         {
           info.map((infoEntry, index) => {
             return (
@@ -36,7 +38,7 @@ export default function Contact({ info }) {
             )
           })
         }
-      </div>
+      </div> */}
     </Layout>
   )
 }
