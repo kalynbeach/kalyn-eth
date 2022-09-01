@@ -1,40 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import './mixins.module.scss';
 @import './variables.module.scss';
 
-// @font-face {
-//   font-family: "Early-GameBoy";
-//   src: url("../public/fonts/Early-GameBoy.ttf");
-//   font-weight: normal;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: "DMMono";
-//   src: url("../public/fonts/DMMono-Regular.ttf");
-//   font-weight: normal;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: "DMMonoItalic";
-//   src: url("../public/fonts/DMMono-Italic.ttf");
-//   font-weight: normal;
-//   font-style: italic;
-// }
-
-// @font-face {
-//   font-family: "ArchivoBlack-Regular";
-//   src: url("../public/fonts/ArchivoBlack-Regular.ttf");
-//   font-weight: normal;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: "PressStart2P-Regular";
-//   src: url("../public/fonts/PressStart2P-Regular.ttf");
-//   font-weight: normal;
-//   font-style: normal;
-// }
 
 @font-face {
   font-family: "IBMPlexMono-Bold";
