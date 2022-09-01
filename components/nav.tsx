@@ -15,14 +15,13 @@ export default function Nav() {
         <Link href='/blog'>
           <a className={router.pathname == '/blog' ? styles.activeLink : null}>blog</a>
         </Link>
-        <Link href='/work'>
+        {/* <Link href='/work'>
           <a className={router.pathname == '/work' ? styles.activeLink : null}>work</a>
-        </Link>
-        <Link href='/contact'>
+        </Link> */}
+        {/* <Link href='/contact'>
           <a className={router.pathname == '/contact' ? styles.activeLink : null}>contact</a>
-        </Link>
+        </Link> */}
       </div>
-      {/* <div className={styles.navImg}></div> */}
     </nav>
   )
 }
