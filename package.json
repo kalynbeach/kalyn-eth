@@ -5,8 +5,9 @@
   "version": "1.0.1",
   "author": "Kalyn Beach",
   "dependencies": {
-    "@aws-amplify/ui-react": "^1.2.26",
+    "@aws-amplify/ui-react": "^3.5.0",
     "aws-amplify": "^4.3.33",
+    "classnames": "^2.3.1",
     "date-fns": "^2.29.2",
     "gray-matter": "^4.0.3",
     "next": "latest",

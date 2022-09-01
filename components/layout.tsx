@@ -5,12 +5,10 @@ import Footer from './footer'
 import styles from '../styles/components/layout.module.scss'
 // import utilStyles from '../styles/utils.module.scss'
 
-
 export const siteTitle = 'kalyn.eth'
 
 type Props = {
-  children: React.ReactNode,
-
+  children: React.ReactNode
 }
 
 export default function Layout({ children }: Props) {

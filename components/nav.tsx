@@ -12,6 +12,9 @@ export default function Nav() {
         <Link href='/about'>
           <a className={router.pathname == '/about' ? styles.activeLink : null}>about</a>
         </Link>
+        <Link href='/blog'>
+          <a className={router.pathname == '/blog' ? styles.activeLink : null}>blog</a>
+        </Link>
         <Link href='/work'>
           <a className={router.pathname == '/work' ? styles.activeLink : null}>work</a>
         </Link>

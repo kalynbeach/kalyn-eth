@@ -16,8 +16,8 @@
 # misc
 .DS_Store
 *.pem
-/.vscode
-/content
+/.vscode/
+/content/
 
 # debug
 npm-debug.log*
@@ -36,6 +36,7 @@ yarn-error.log*
 # lock files
 yarn.lock
 package-lock.json
+pnpm-lock.yaml
 
 #amplify-do-not-edit-begin
 amplify/\#current-cloud-backend
