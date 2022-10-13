@@ -8,7 +8,7 @@ import MorePosts from '../components/blog/more-posts'
 import styles from '../styles/pages/blog.module.scss'
 
 const pageTitle = 'blog'
-const pageHeading = 'writing...'
+// const pageHeading = 'writing...'
 
 type Props = {
   allPosts: Post[]
@@ -24,7 +24,7 @@ export default function Blog({ allPosts }: Props) {
         <title>{`${siteTitle} - ${pageTitle}`}</title>
       </Head>
       <h1>{ pageTitle }</h1>
-      <strong>{pageHeading}</strong>
+      {/* <strong>{pageHeading}</strong> */}
       <br/>
       {heroPost && (
         <HeroPost
