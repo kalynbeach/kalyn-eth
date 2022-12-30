@@ -5,7 +5,7 @@ import { getAllPosts } from '../lib/blog/api'
 import Layout, { siteTitle } from '../components/layout'
 import HeroPost from '../components/blog/hero-post'
 import MorePosts from '../components/blog/more-posts'
-import styles from '../styles/pages/blog.module.scss'
+import styles from '../styles/pages/blog.module.css'
 
 const pageTitle = 'blog'
 // const pageHeading = 'writing...'

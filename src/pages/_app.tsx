@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import Script from 'next/script'
 import * as gtag from '../lib/gtag'
-import '../styles/global.scss'
+import '../styles/global.css'
 
 
 export default function MyApp({ Component, pageProps }: AppProps) {

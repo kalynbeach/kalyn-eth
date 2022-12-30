@@ -2,8 +2,7 @@ import Head from 'next/head'
 import Header from './header'
 import Nav from './nav'
 import Footer from './footer'
-import styles from '../styles/components/layout.module.scss'
-// import utilStyles from '../styles/utils.module.scss'
+import styles from '../styles/components/layout.module.css'
 
 export const siteTitle = 'kalyn.eth'
 

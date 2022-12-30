@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import styles from '../styles/components/nav.module.scss'
+import styles from '../styles/components/nav.module.css'
 // import Image from 'next/image'
 
 export default function Nav() {

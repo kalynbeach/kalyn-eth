@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.nav .navLinks {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+}
+
+.nav .navLinks a {
+  font-family: var(--font-family-head);
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+
+.nav .navLinks .activeLink {
+  color: var(--color-light-green);
+}
+
+.nav .navImg {
+  margin-top: auto;
+}
