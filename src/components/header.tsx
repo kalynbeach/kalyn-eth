@@ -8,7 +8,7 @@ export default function Header({ siteTitle }) {
       <div className={styles.headerInner}>
         <span className={styles.headerTitle}>
           <Link href='/'>
-            <a>{siteTitle}</a>
+            {siteTitle}
           </Link>
         </span>
         <Nav />

@@ -9,11 +9,11 @@ export default function Nav() {
   return (
     <nav className={styles.nav}>
       <div className={styles.navLinks}>
-        <Link href='/about'>
-          <a className={router.pathname == '/about' ? styles.activeLink : null}>about</a>
+        <Link href='/about' className={router.pathname == '/about' ? styles.activeLink : null}>
+          about
         </Link>
-        <Link href='/blog'>
-          <a className={router.pathname == '/blog' ? styles.activeLink : null}>blog</a>
+        <Link href='/blog' className={router.pathname == '/blog' ? styles.activeLink : null}>
+          blog
         </Link>
         {/* <Link href='/work'>
           <a className={router.pathname == '/work' ? styles.activeLink : null}>work</a>
