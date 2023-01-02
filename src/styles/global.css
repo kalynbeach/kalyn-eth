@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @import './mixins.module.scss'; */
-
-
 @font-face {
   font-family: "IBMPlexMono-Bold";
   src: url("../../public/fonts/IBMPlexMono-Bold.ttf");

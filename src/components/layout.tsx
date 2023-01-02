@@ -10,16 +10,16 @@ type Props = {
 
 export default function Layout({ children }: Props) {
   return (
-    <div className='dark min-h-[114vh] flex flex-col justify-start bg-night-900 transition-all'>
+    <div className='dark flex flex-col justify-start bg-night-900 transition-all'>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="kalyn.eth - Kalyn Beach" />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <div className='flex-1 w-full mx-auto py-12 px-8 flex flex-col gap-24 md:max-w-[40rem] md:px-4 lg:max-w-[48rem]'>
+      <div className='flex-1 w-full min-h-screen mx-auto px-8 flex flex-col gap-24 md:max-w-3xl md:px-4 lg:max-w-5xl'>
         <Header siteTitle={siteTitle || `kalyn.eth`} />
-        <main className='px-4 flex-1 flex flex-col'>
+        <main className='p-0 flex-1 flex flex-col'>
           {children}
         </main>
       </div>
