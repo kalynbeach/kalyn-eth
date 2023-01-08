@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className='w-full mx-auto my-0 p-0'>
-      <div className='h-56 px-4 py-0 flex flex-row justify-between items-center text-xs'>
+      <div className='h-56 py-0 flex flex-row justify-between items-center text-xs'>
         <span className=''>© Kalyn Beach {new Date().getFullYear()}</span>
         <div className='flex flex-row justify-evenly items-center'>
           <a className='inline-block' href='https://github.com/kalynbeach' target='_blank' rel='noopener noreferrer'>GitHub</a>

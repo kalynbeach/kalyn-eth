@@ -4,13 +4,10 @@ import Layout, { siteTitle } from '../components/layout'
 import styles from '../styles/pages/about.module.scss'
 // import AboutJSON from '../content/about.json'
 
-
 const pageTitle = 'about'
-const pageHeading = 'loading...'
-
+const pageHeading = 'yo'
 
 type Props = {}
-
 
 // export const getStaticProps: GetStaticProps = async () => {
 //   const content = AboutJSON.body
@@ -19,7 +16,6 @@ type Props = {}
 //   }
 // }
 
-
 export default function About() {
   return (
     <Layout>
@@ -27,15 +23,7 @@ export default function About() {
         <title>{`${siteTitle} - ${pageTitle}`}</title>
       </Head>
       <h1 className='mb-24 text-4xl font-bold'>{ pageTitle }</h1>
-      <strong>{pageHeading}</strong>
-      <br/>
-      {/* <div className={styles.aboutStatement}>
-        {
-          content.map((p, index) => {
-            return <p key={`about_body_${index}`}>{ p.text }</p>
-          })
-        }
-      </div> */}
+      <strong className='mb-4'>{pageHeading}</strong>
       {/* <div className={styles.aboutTech}>
         <h2>Tech</h2>
         <div className={styles.techStacks}>
