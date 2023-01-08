@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className='w-full max-w-sm mx-auto my-0 p-0 gap-24 md:max-w-2xl lg:max-w-3xl xl:max-w-5xl'>
+    <footer className='w-full mx-auto my-0 p-0'>
       <div className='h-56 px-4 py-0 flex flex-row justify-between items-center text-xs'>
         <span className=''>© Kalyn Beach {new Date().getFullYear()}</span>
         <div className='flex flex-row justify-evenly items-center'>

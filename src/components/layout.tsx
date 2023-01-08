@@ -17,13 +17,13 @@ export default function Layout({ children }: Props) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <div className='flex-1 w-full min-h-screen mx-auto px-8 flex flex-col gap-24 md:max-w-3xl md:px-4 lg:max-w-5xl'>
+      <div className='flex-1 w-full min-h-screen mx-auto px-8 flex flex-col md:max-w-3xl md:px-4 lg:max-w-5xl'>
         <Header siteTitle={siteTitle || `kalyn.eth`} />
-        <main className='p-0 flex-1 flex flex-col'>
+        <main className='min-h-screen py-12 flex-1 flex flex-col'>
           {children}
         </main>
+        <Footer />
       </div>
-      <Footer />
     </div>
   )
 }

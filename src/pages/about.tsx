@@ -26,7 +26,7 @@ export default function About() {
       <Head>
         <title>{`${siteTitle} - ${pageTitle}`}</title>
       </Head>
-      <h1>{ pageTitle }</h1>
+      <h1 className='mb-24 text-4xl font-bold'>{ pageTitle }</h1>
       <strong>{pageHeading}</strong>
       <br/>
       {/* <div className={styles.aboutStatement}>

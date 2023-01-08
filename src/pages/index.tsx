@@ -12,7 +12,7 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <h1>{pageTitle}</h1>
+      <h1 className='mb-24 text-4xl font-bold'>{pageTitle}</h1>
       <strong>{pageHeading}</strong>
       {/* <p></p> */}
     </Layout>
